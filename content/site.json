@@ -14,7 +14,7 @@
     "location": "Hamburg, Germany",
     "email": "nguyentienduc110204@gmail.com",
     "linkedin": "https://www.linkedin.com/in/nguyentienduc04/",
-    "github": "",
+    "github": "https://github.com/tienduc04",
     "cv": "Tien_Duc_Nguyen_CV.pdf"
   },
 
@@ -95,7 +95,7 @@
       "method": "Annualised returns, volatility and correlations in pandas; long-only optimisation with SciPy (maximum Sharpe, minimum variance, efficient frontier); equal-weight and 60/40 benchmarks; out-of-sample test with weights fitted on 2015–2019 and held through 2020–2024.",
       "result": "In sample, the maximum-Sharpe mix (54% S&P 500, 46% gold) reached a Sharpe ratio of 0.83 versus 0.66 for 60/40, because gold barely moved with equities (correlation 0.05). Out of sample it fell to 0.19 while 60/40 held 0.53: weights fitted on 2015–2019 put 75% into bonds, which then returned −0.1% a year, including −13% in 2022.",
       "tools": ["Python", "pandas", "SciPy", "matplotlib", "yfinance"],
-      "links": [{ "label": "GitHub", "url": "[TODO: link after uploading projects/portfolio-analysis to GitHub]" }]
+      "links": [{ "label": "GitHub", "url": "https://github.com/tienduc04/tienduc04.github.io/tree/main/projects/portfolio-analysis" }]
     },
     {
       "title": "Credit card default risk (SQL + Power BI)",
@@ -111,7 +111,7 @@
       "method": "SQL (SQLite) to load, clean and engineer features (utilisation, payment ratio, months late); default rates by segment and a status × utilisation risk matrix; Power BI dashboard with DAX measures. Sex and marital status deliberately excluded.",
       "result": "Default rate rises from 11.7% for clients never late to 70.3% for clients late in all 6 months. A one-line rule (late this month) flags 22.7% of clients with a 50.3% default rate and catches 51.7% of next-month defaults. Recommendations: start collections on the watch list right away, freeze limit increases after 3+ late months, and encourage paying in full.",
       "tools": ["SQL", "Power BI", "DAX", "Python"],
-      "links": [{ "label": "Dashboard", "url": "[TODO: link to screenshots or .pbix on GitHub]" }]
+      "links": [{ "label": "GitHub", "url": "https://github.com/tienduc04/tienduc04.github.io/tree/main/projects/credit-risk" }]
     }
   ],
 
