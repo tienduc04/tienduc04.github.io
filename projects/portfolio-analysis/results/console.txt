@@ -1,0 +1,16 @@
+Period 2015-01-02 to 2024-12-31, 2515 trading days, risk-free 1.60%
+          ret    vol   cagr  sharpe  max_drawdown
+ticker                                           
+SPY     0.138  0.176  0.130   0.693        -0.337
+EFA     0.066  0.173  0.052   0.291        -0.342
+VNM    -0.009  0.225 -0.034  -0.111        -0.517
+AGG     0.014  0.053  0.013  -0.034        -0.184
+GLD     0.085  0.141  0.078   0.491        -0.220
+Max Sharpe       ret 11.38%  vol 11.77%  Sharpe 0.83  maxDD -21.2%  [SPY 54%, GLD 46%]
+Min variance     ret 1.85%  vol 5.20%  Sharpe 0.05  maxDD -18.2%  [SPY 3%, EFA 2%, VNM 2%, AGG 94%]
+Equal weight     ret 5.90%  vol 10.83%  Sharpe 0.40  maxDD -24.4%  [SPY 20%, EFA 20%, VNM 20%, AGG 20%, GLD 20%]
+60/40 (SPY/AGG)  ret 8.86%  vol 10.98%  Sharpe 0.66  maxDD -21.7%  [SPY 60%, AGG 40%]
+Out of sample, 2020–2024:
+  Max Sharpe (fitted 2015–2019)  ret 3.76%  vol 7.66%  Sharpe 0.19  maxDD -17.5%  [SPY 22%, AGG 75%, GLD 4%]
+  Equal weight                   ret 6.35%  vol 12.72%  Sharpe 0.32  maxDD -24.4%  [SPY 20%, EFA 20%, VNM 20%, AGG 20%, GLD 20%]
+  60/40 (SPY/AGG)                ret 9.40%  vol 13.37%  Sharpe 0.53  maxDD -21.7%  [SPY 60%, AGG 40%]

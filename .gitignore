@@ -1,0 +1,9 @@
+node_modules
+dist
+.claude
+.venv
+__pycache__
+.playwright-mcp
+*.db
+**/.pbi/localSettings.json
+**/.pbi/cache.abf

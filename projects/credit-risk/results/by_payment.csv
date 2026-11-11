@@ -1,0 +1,6 @@
+payment_band,clients,default_rate
+0 No bill,3175,0.2343
+1 <10% of bill,14912,0.2597
+2 10-50%,4332,0.22
+3 50-100%,758,0.1557
+4 Paid in full,6823,0.1389

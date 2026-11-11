@@ -1,0 +1,5 @@
+status_band,clients,defaults,default_rate,share_of_clients
+1 Paid in full / no use,8445,1319,0.1562,0.2815
+2 Revolving (minimum paid),14737,1888,0.1281,0.4912
+3 1 month late,3688,1252,0.3395,0.1229
+4 2+ months late,3130,2177,0.6955,0.1043

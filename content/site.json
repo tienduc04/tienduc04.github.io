@@ -1,0 +1,226 @@
+{
+  "meta": {
+    "title": "Duc Nguyen Tien | Finance & Business Analytics",
+    "description": "Finance graduate (La Trobe) and M.Sc. Business Analytics & Data Science student at KLU Hamburg. Valuation and investment models in Excel; data work in SQL, Python and Power BI.",
+    "url": "https://ducnguyen.vercel.app",
+    "ogImage": "og-image.png"
+  },
+
+  "person": {
+    "name": "Duc Nguyen Tien",
+    "nameLocal": "Nguyễn Tiến Đức",
+    "initials": "DN",
+    "positioning": "Finance graduate | MSc Business Analytics & Data Science | Excel, SQL, Python, Power BI",
+    "location": "Hamburg, Germany",
+    "email": "nguyentienduc110204@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/nguyentienduc04/",
+    "github": "",
+    "cv": "Tien_Duc_Nguyen_CV.pdf"
+  },
+
+  "about": [
+    "I am a finance graduate from La Trobe University, now studying for an M.Sc. in Business Analytics & Data Science at Kühne Logistics University (KLU) in Hamburg.",
+    "I build valuation and investment models in Excel and use SQL, Python and Power BI to clean, analyse and report financial data.",
+    "I have supported month-end reporting at PVI Insurance and partner reporting at MSB Bank, and I am looking for finance and analytics roles where both skill sets count."
+  ],
+
+  "experience": [
+    {
+      "role": "General Accounting Intern (Finance)",
+      "org": "PVI Insurance",
+      "place": "Hanoi, Vietnam",
+      "dates": "12/2025 – 03/2026",
+      "bullets": [
+        "Prepared recurring weekly finance reports for 5 corporate departments and validated them against enterprise databases to support month-end closing.",
+        "Analysed mismatches in financial performance data across 3 monthly reporting cycles and documented findings in structured Excel tables."
+      ]
+    },
+    {
+      "role": "Corporate Partnership Intern",
+      "org": "MSB Bank",
+      "place": "Hanoi, Vietnam",
+      "dates": "09/2024 – 11/2024",
+      "bullets": [
+        "Gathered data requirements from 50+ corporate partners to replace manual partner tracking with a structured report.",
+        "Ran plausibility checks on 500+ financial records in Excel ahead of weekly management reviews."
+      ]
+    }
+  ],
+
+  "featured": [
+    {
+      "title": "Yancoal Australia: 10-year forecast and DCF valuation",
+      "tag": "Valuation · La Trobe FIN3003, 2025",
+      "status": "",
+      "metrics": [
+        { "value": "A$17.3bn", "label": "Equity value (financial)" },
+        { "value": "A$10.5bn", "label": "After environmental costs" },
+        { "value": "8.25%", "label": "WACC" }
+      ],
+      "problem": "What is an ASX-listed coal producer worth once its environmental costs are priced in?",
+      "data": "Yancoal 2024 Annual Report and Sustainability Report; 5 years of historical financials (FY2020–FY2024).",
+      "method": "Driver-based forecast of sales, EBITDA, capex and net working capital for FY2025–FY2034, discounted at a WACC of 8.25% with 1.5% terminal growth, then adjusted for environmental costs.",
+      "result": "Equity value of A$17.3bn on a purely financial basis versus A$10.5bn after environmental costs, a 39% gap.",
+      "tools": ["Excel", "DCF", "Forecasting", "ESG analysis"],
+      "links": [{ "label": "Excel model", "url": "[TODO: link to a cleaned copy of the model]" }]
+    },
+    {
+      "title": "1,200 MW offshore wind farm: investment model",
+      "tag": "Capital budgeting · La Trobe, 2025",
+      "status": "",
+      "metrics": [
+        { "value": "A$470m", "label": "NPV, base case" },
+        { "value": "7.73%", "label": "IRR" },
+        { "value": "~57%", "label": "NPV impact of a 5% price move" }
+      ],
+      "problem": "Is an A$3.6bn offshore wind farm supplying an aluminium smelter financially viable, and what drives its value?",
+      "data": "Project assumptions: 200 turbines, construction 2025–2028, operation 2029–2058, tariff of A$90/MWh.",
+      "method": "30-year cash flow model covering the capex schedule, operations, depreciation and tax; ±5% sensitivity tests on WACC, price and capex; base, best, worst and policy scenarios.",
+      "result": "Base-case NPV of A$470m, IRR of 7.73% and payback of about 14.5 years. Electricity price is the main value driver.",
+      "tools": ["Excel", "NPV / IRR", "Sensitivity analysis", "Scenario analysis"],
+      "role": "[TODO: individual or group project?]",
+      "links": [{ "label": "Excel model", "url": "[TODO: link]" }]
+    },
+    {
+      "title": "Portfolio analysis and efficient frontier",
+      "tag": "Portfolio management · Python, 2026",
+      "status": "",
+      "metrics": [
+        { "value": "0.83", "label": "Max-Sharpe ratio, 2015–2024" },
+        { "value": "0.66", "label": "60/40 benchmark, same period" },
+        { "value": "0.19", "label": "Max-Sharpe, out of sample (60/40: 0.53)" }
+      ],
+      "problem": "How should a long-only investor split money across US, international and Vietnamese equities, bonds and gold, and does the 'optimal' mix hold up on data it has not seen?",
+      "data": "10 years of daily adjusted prices (2015–2024, 2,515 trading days) for 5 ETFs (SPY, EFA, VNM, AGG, GLD) from Yahoo Finance; T-bill ETF (BIL) as the risk-free rate (1.6% a year).",
+      "method": "Annualised returns, volatility and correlations in pandas; long-only optimisation with SciPy (maximum Sharpe, minimum variance, efficient frontier); equal-weight and 60/40 benchmarks; out-of-sample test with weights fitted on 2015–2019 and held through 2020–2024.",
+      "result": "In sample, the maximum-Sharpe mix (54% S&P 500, 46% gold) reached a Sharpe ratio of 0.83 versus 0.66 for 60/40, because gold barely moved with equities (correlation 0.05). Out of sample it fell to 0.19 while 60/40 held 0.53: weights fitted on 2015–2019 put 75% into bonds, which then returned −0.1% a year, including −13% in 2022.",
+      "tools": ["Python", "pandas", "SciPy", "matplotlib", "yfinance"],
+      "links": [{ "label": "GitHub", "url": "[TODO: link after uploading projects/portfolio-analysis to GitHub]" }]
+    },
+    {
+      "title": "Credit card default risk (SQL + Power BI)",
+      "tag": "Risk analytics · SQL, Power BI, 2026",
+      "status": "Dashboard in progress",
+      "metrics": [
+        { "value": "22.1%", "label": "Portfolio default rate" },
+        { "value": "69.6%", "label": "Default rate, 2+ months late" },
+        { "value": "51.7%", "label": "Defaults caught by watch list (22.7% flagged)" }
+      ],
+      "problem": "A card issuer sees about 1 in 5 clients default. Which segments drive defaults, and what should change in collections and limit policy?",
+      "data": "UCI Default of Credit Card Clients: 30,000 clients of a Taiwanese bank, 6 months of repayment status, bills and payments (2005).",
+      "method": "SQL (SQLite) to load, clean and engineer features (utilisation, payment ratio, months late); default rates by segment and a status × utilisation risk matrix; Power BI dashboard with DAX measures. Sex and marital status deliberately excluded.",
+      "result": "Default rate rises from 11.7% for clients never late to 70.3% for clients late in all 6 months. A one-line rule (late this month) flags 22.7% of clients with a 50.3% default rate and catches 51.7% of next-month defaults. Recommendations: start collections on the watch list right away, freeze limit increases after 3+ late months, and encourage paying in full.",
+      "tools": ["SQL", "Power BI", "DAX", "Python"],
+      "links": [{ "label": "Dashboard", "url": "[TODO: link to screenshots or .pbix on GitHub]" }]
+    }
+  ],
+
+  "more": [
+    {
+      "title": "Edu Aegis: AI study-support chatbot",
+      "tag": "Idea Hunting 2025, Hanoi University · Top 10",
+      "problem": "Lecturers carry heavy teaching loads while students expect faster, more personal answers, and many students feel uncomfortable using email or the LMS to ask questions.",
+      "data": "Google Forms survey of [TODO: confirm, 186 or about 108] students; interviews with lecturers and teaching assistants at VinUniversity, Brighton College and RMIT; secondary research.",
+      "approach": "Turned survey findings into an MVP feature set (automatic answers from lecture materials, academic-progress alerts, synced reminders, fair group grading) and a two-tier subscription model for universities and training centres.",
+      "result": "About 70% of respondents ask lecturers questions two or more times a week; 50.9% wanted a dedicated tool (20.4% did not). The team reached the Top 10.",
+      "role": "Team Leader of a 4-person team: led the research, problem statement, market analysis and pitch.",
+      "links": [{ "label": "Pitch video", "url": "https://youtu.be/2_17eyQAbDA" }]
+    },
+    {
+      "title": "YouTube monetisation analysis",
+      "tag": "MindX Technology School, 2023 · group project",
+      "problem": "Which countries, categories and channel types earn the most on YouTube while overall views decline, and where is the opportunity for a new channel?",
+      "data": "Global YouTube Statistics 2023 (Kaggle): 995 channels with subscribers, views, uploads, category, country and estimated earnings.",
+      "approach": "Cleaned the data in Python (pandas): checked 995 records for missing values, kept 554 complete records and dropped 9 unused columns; built a Power BI dashboard of countries, categories and trends.",
+      "result": "The US, India, Brazil and South Korea led on audience; Entertainment and Music earned the most per video. The team recommended a People & Blogs channel on Vietnamese food aimed at the US, Korea and Russia.",
+      "role": "Data analysis member of a 4-person team: collected, cleaned and processed the data with SQL and Python.",
+      "links": []
+    },
+    {
+      "title": "Production scheduling data pipeline",
+      "tag": "KLU Scientific Programming, 2026 · Julia (JuMP, HiGHS)",
+      "problem": "Schedule a factory's operations from raw production data while keeping deliveries on time.",
+      "data": "989 cleaned rows of manufacturing order and capacity data.",
+      "approach": "Built a modular pipeline for demand analysis, optimisation (JuMP with the HiGHS solver) and KPI evaluation, then tested load-rebalancing scenarios across machines.",
+      "result": "Scheduled 495 of 495 operations (100%) with a 93.9% on-time delivery rate, and raised machine M04 utilisation from 10.6% to 86.6%.",
+      "role": "Team lead of a 5-person team.",
+      "links": []
+    },
+    {
+      "title": "Fama-French five-factor regression",
+      "tag": "La Trobe Econometrics, 2024 · EViews",
+      "problem": "How well do the five Fama-French factors explain an industry's excess returns?",
+      "data": "14,810 daily observations of industry excess returns and factor returns.",
+      "approach": "Multiple regression, validated with RESET, heteroskedasticity and autocorrelation tests.",
+      "result": "The model explained 76.7% of the variance in excess returns (R² 0.767).",
+      "role": "",
+      "links": []
+    }
+  ],
+
+  "demo": {
+    "note": "Historical data: annualised daily returns of 5 ETFs, 2015–2024 (Yahoo Finance), from the portfolio analysis project above. Risk-free rate = T-bill ETF (BIL). Past returns are not a forecast or investment advice.",
+    "riskFree": 0.016,
+    "assets": [
+      { "name": "US equities (SPY)", "ret": 0.1381, "vol": 0.1762, "weight": 40 },
+      { "name": "Intl equities (EFA)", "ret": 0.0663, "vol": 0.1728, "weight": 10 },
+      { "name": "Vietnam (VNM)", "ret": -0.009, "vol": 0.2252, "weight": 10 },
+      { "name": "US bonds (AGG)", "ret": 0.0142, "vol": 0.0531, "weight": 30 },
+      { "name": "Gold (GLD)", "ret": 0.0854, "vol": 0.1412, "weight": 10 }
+    ],
+    "corr": [
+      [1.0, 0.855, 0.525, 0.094, 0.047],
+      [0.855, 1.0, 0.529, 0.133, 0.125],
+      [0.525, 0.529, 1.0, 0.084, 0.056],
+      [0.094, 0.133, 0.084, 1.0, 0.373],
+      [0.047, 0.125, 0.056, 0.373, 1.0]
+    ]
+  },
+
+  "skills": [
+    { "level": "Proficient", "items": ["Excel (pivot tables, XLOOKUP, Power Query)", "Financial modelling: DCF, NPV / IRR", "Sensitivity and scenario analysis", "Financial reporting and data validation"] },
+    { "level": "Working knowledge", "items": ["SQL (SQL Server, SQLite)", "Power BI (DAX)", "Python (pandas)", "Regression and econometrics (EViews, Stata)"] },
+    { "level": "Familiar", "items": ["Julia (JuMP, HiGHS)", "SPSS", "Git / GitHub", "n8n and LLM agent workflows"] }
+  ],
+
+  "certificates": [
+    { "name": "Associate Data Analyst", "issuer": "DataCamp", "date": "2024" },
+    { "name": "Python & pandas track (6 courses)", "issuer": "DataCamp", "date": "2024" },
+    { "name": "SQL Essential Training", "issuer": "LinkedIn Learning", "date": "2023" },
+    { "name": "SQL: Data Reporting and Analysis", "issuer": "LinkedIn Learning", "date": "2023" },
+    { "name": "Supply Chain Foundations: Analytics", "issuer": "LinkedIn Learning", "date": "2023" },
+    { "name": "Data Analytics Job Simulation", "issuer": "Quantium · Forage", "date": "2024" },
+    { "name": "Data Analytics & Visualization Job Simulation", "issuer": "Accenture · Forage", "date": "2024" },
+    { "name": "Audit & Assurance Job Simulation", "issuer": "KPMG · Forage", "date": "2026" },
+    { "name": "WorldQuant Challenge, Bronze level", "issuer": "WorldQuant", "date": "" }
+  ],
+
+  "languages": "English (IELTS 7.0, C1) · German (A2) · Vietnamese (native)",
+
+  "education": [
+    {
+      "degree": "M.Sc. Business Analytics & Data Science",
+      "school": "Kühne Logistics University (KLU), Hamburg",
+      "dates": "09/2026 – 09/2028 (expected)",
+      "details": ["Current modules: Fundamentals of Data Science, Statistics & Econometrics, Scientific Programming, Business Logistics & Supply Chain Management"]
+    },
+    {
+      "degree": "Bachelor of Business (Finance & Marketing)",
+      "school": "La Trobe University, taught with Hanoi University",
+      "dates": "2023 – 2025",
+      "details": ["WAM 73.42 / 100", "Econometrics 86 · Sustainable & Responsible Finance 86 · Portfolio Management 80"]
+    },
+    {
+      "degree": "Diploma in Business",
+      "school": "La Trobe University",
+      "dates": "2022 – 2023",
+      "details": ["WAM 76.13 / 100 · Fundamentals of Finance 94"]
+    }
+  ],
+
+  "beyond": [
+    "La Trobe High Academic Achievement Scholarship, 2023 and 2024.",
+    "3rd place, ETERNITY 2023 at La Trobe, marking 20 years of the La Trobe–Hanoi University partnership; led the team's charity fundraising workshops.",
+    "4+ years of volunteering at Vietnam Friendship Village (2021–2025), supporting children with disabilities and Agent Orange victims."
+  ]
+}

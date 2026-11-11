@@ -1,0 +1,252 @@
+{
+  "name": "SemanticModel",
+  "compatibilityLevel": 1567,
+  "model": {
+    "culture": "en-US",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "clients_clean",
+        "columns": [
+          {
+            "name": "id",
+            "dataType": "int64",
+            "sourceColumn": "id",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "limit_bal",
+            "dataType": "double",
+            "sourceColumn": "limit_bal",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "age",
+            "dataType": "int64",
+            "sourceColumn": "age",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Education",
+            "dataType": "string",
+            "sourceColumn": "education",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "status_latest",
+            "dataType": "int64",
+            "sourceColumn": "status_latest",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "max_delay_6m",
+            "dataType": "int64",
+            "sourceColumn": "max_delay_6m",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Months late (last 6)",
+            "dataType": "int64",
+            "sourceColumn": "months_late_6m",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "balance_latest",
+            "dataType": "double",
+            "sourceColumn": "balance_latest",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "utilisation",
+            "dataType": "double",
+            "sourceColumn": "utilisation",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "payment_ratio",
+            "dataType": "double",
+            "sourceColumn": "payment_ratio",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "default_next_month",
+            "dataType": "int64",
+            "sourceColumn": "default_next_month",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "status_band",
+            "dataType": "string",
+            "sourceColumn": "status_band",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "utilisation_band",
+            "dataType": "string",
+            "sourceColumn": "utilisation_band",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "limit_band",
+            "dataType": "string",
+            "sourceColumn": "limit_band",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "age_band",
+            "dataType": "string",
+            "sourceColumn": "age_band",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "payment_band",
+            "dataType": "string",
+            "sourceColumn": "payment_band",
+            "summarizeBy": "none",
+            "isHidden": true
+          },
+          {
+            "name": "watch_list",
+            "dataType": "int64",
+            "sourceColumn": "watch_list",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Repayment status",
+            "dataType": "string",
+            "sourceColumn": "Repayment status",
+            "summarizeBy": "none",
+            "sortByColumn": "status_band"
+          },
+          {
+            "name": "Credit utilisation",
+            "dataType": "string",
+            "sourceColumn": "Credit utilisation",
+            "summarizeBy": "none",
+            "sortByColumn": "utilisation_band"
+          },
+          {
+            "name": "Credit limit (NT$)",
+            "dataType": "string",
+            "sourceColumn": "Credit limit (NT$)",
+            "summarizeBy": "none",
+            "sortByColumn": "limit_band"
+          },
+          {
+            "name": "Age band",
+            "dataType": "string",
+            "sourceColumn": "Age band",
+            "summarizeBy": "none",
+            "sortByColumn": "age_band"
+          },
+          {
+            "name": "Share of bill paid",
+            "dataType": "string",
+            "sourceColumn": "Share of bill paid",
+            "summarizeBy": "none",
+            "sortByColumn": "payment_band"
+          },
+          {
+            "name": "Watch list",
+            "dataType": "string",
+            "sourceColumn": "Watch list",
+            "summarizeBy": "none",
+            "sortByColumn": "watch_list"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "clients_clean",
+            "mode": "import",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = Csv.Document(File.Contents(DataFolder & \"clients_clean.csv\"), [Delimiter=\",\", Columns=17, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),",
+                "    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),",
+                "    Typed = Table.TransformColumnTypes(Headers, {{\"id\", Int64.Type}, {\"limit_bal\", type number}, {\"age\", Int64.Type}, {\"education\", type text}, {\"status_latest\", Int64.Type}, {\"max_delay_6m\", Int64.Type}, {\"months_late_6m\", Int64.Type}, {\"balance_latest\", type number}, {\"utilisation\", type number}, {\"payment_ratio\", type number}, {\"default_next_month\", Int64.Type}, {\"status_band\", type text}, {\"utilisation_band\", type text}, {\"limit_band\", type text}, {\"age_band\", type text}, {\"payment_band\", type text}, {\"watch_list\", Int64.Type}}, \"en-US\"),",
+                "    L0 = Table.AddColumn(Typed, \"Repayment status\", each Text.AfterDelimiter([status_band], \" \"), type text),",
+                "    L1 = Table.AddColumn(L0, \"Credit utilisation\", each Text.AfterDelimiter([utilisation_band], \" \"), type text),",
+                "    L2 = Table.AddColumn(L1, \"Credit limit (NT$)\", each Text.AfterDelimiter([limit_band], \" \"), type text),",
+                "    L3 = Table.AddColumn(L2, \"Age band\", each Text.AfterDelimiter([age_band], \" \"), type text),",
+                "    L4 = Table.AddColumn(L3, \"Share of bill paid\", each Text.AfterDelimiter([payment_band], \" \"), type text),",
+                "    Watch = Table.AddColumn(L4, \"Watch list\", each if [watch_list] = 1 then \"Flagged\" else \"Not flagged\", type text)",
+                "in",
+                "    Watch"
+              ]
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Clients",
+            "expression": "COUNTROWS ( clients_clean )",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Defaults",
+            "expression": "SUM ( clients_clean[default_next_month] )",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Default Rate",
+            "expression": "DIVIDE ( [Defaults], [Clients] )",
+            "formatString": "0.0%"
+          },
+          {
+            "name": "Portfolio Default Rate",
+            "expression": "CALCULATE ( [Default Rate], ALL ( clients_clean ) )",
+            "formatString": "0.0%"
+          },
+          {
+            "name": "Lift vs Portfolio",
+            "expression": "DIVIDE ( [Default Rate], [Portfolio Default Rate] )",
+            "formatString": "0.0"
+          },
+          {
+            "name": "Balance of Defaulters (NT$ m)",
+            "expression": "DIVIDE ( SUMX ( FILTER ( clients_clean, clients_clean[default_next_month] = 1 ), MAX ( clients_clean[balance_latest], 0 ) ), 1000000 )",
+            "formatString": "#,0"
+          },
+          {
+            "name": "Watch-list Share",
+            "expression": "DIVIDE ( CALCULATE ( [Clients], clients_clean[watch_list] = 1 ), [Clients] )",
+            "formatString": "0.0%"
+          },
+          {
+            "name": "Watch-list Recall",
+            "expression": "DIVIDE ( CALCULATE ( [Defaults], clients_clean[watch_list] = 1 ), [Defaults] )",
+            "formatString": "0.0%"
+          },
+          {
+            "name": "Watch-list Precision",
+            "expression": "CALCULATE ( [Default Rate], clients_clean[watch_list] = 1 )",
+            "formatString": "0.0%"
+          }
+        ]
+      }
+    ],
+    "expressions": [
+      {
+        "name": "DataFolder",
+        "kind": "m",
+        "expression": "\"C:\\Users\\ZinCruise\\Documents\\portfolio\\projects\\credit-risk\\powerbi\\\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"DataFolder\", \"clients_clean\"]"
+      }
+    ]
+  }
+}

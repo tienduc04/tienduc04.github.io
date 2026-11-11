@@ -1,0 +1,253 @@
+{
+  "config": "{\"version\": \"5.65\", \"themeCollection\": {\"baseTheme\": {\"name\": \"CY24SU10\", \"type\": 2, \"version\": \"5.59\"}, \"customTheme\": {\"name\": \"credit_risk_theme.json\", \"type\": 1, \"version\": \"5.59\"}}, \"activeSectionIndex\": 0, \"defaultDrillFilterOtherVisuals\": true, \"linguisticSchemaSyncVersion\": 2}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "name": "SharedResources",
+        "type": 2,
+        "disabled": false,
+        "items": [
+          {
+            "type": 202,
+            "path": "BaseThemes/CY24SU10.json",
+            "name": "CY24SU10"
+          }
+        ]
+      }
+    },
+    {
+      "resourcePackage": {
+        "name": "RegisteredResources",
+        "type": 1,
+        "disabled": false,
+        "items": [
+          {
+            "type": 201,
+            "path": "credit_risk_theme.json",
+            "name": "credit_risk_theme.json"
+          }
+        ]
+      }
+    }
+  ],
+  "sections": [
+    {
+      "name": "page1",
+      "displayName": "Portfolio overview",
+      "displayOption": 1,
+      "width": 1280,
+      "height": 720,
+      "ordinal": 0,
+      "config": "{}",
+      "filters": "[]",
+      "visualContainers": [
+        {
+          "x": 20,
+          "y": 10,
+          "z": 0,
+          "width": 1240,
+          "height": 50,
+          "config": "{\"name\": \"p1_title\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 10, \"z\": 0, \"width\": 1240, \"height\": 50}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"About 1 in 5 clients defaults; clients late this month default at 2.3\\u00d7 the portfolio rate\", \"textStyle\": {\"fontSize\": \"18pt\", \"color\": \"#1D2B45\", \"fontWeight\": \"bold\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 70,
+          "z": 0,
+          "width": 235,
+          "height": 110,
+          "config": "{\"name\": \"p1_c1\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 70, \"z\": 0, \"width\": 235, \"height\": 110}}], \"singleVisual\": {\"visualType\": \"card\", \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"labelDisplayUnits\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#C47A3A'\"}}}}}}}]}, \"projections\": {\"Values\": [{\"queryRef\": \"clients_clean.Clients\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"c\", \"Entity\": \"clients_clean\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Clients\"}, \"Name\": \"clients_clean.Clients\", \"NativeReferenceName\": \"Clients\"}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 265,
+          "y": 70,
+          "z": 0,
+          "width": 235,
+          "height": 110,
+          "config": "{\"name\": \"p1_c2\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 265, \"y\": 70, \"z\": 0, \"width\": 235, \"height\": 110}}], \"singleVisual\": {\"visualType\": \"card\", \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"labelDisplayUnits\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#C47A3A'\"}}}}}}}]}, \"projections\": {\"Values\": [{\"queryRef\": \"clients_clean.Default Rate\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"c\", \"Entity\": \"clients_clean\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Default Rate\"}, \"Name\": \"clients_clean.Default Rate\", \"NativeReferenceName\": \"Default Rate\"}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 510,
+          "y": 70,
+          "z": 0,
+          "width": 235,
+          "height": 110,
+          "config": "{\"name\": \"p1_c3\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 510, \"y\": 70, \"z\": 0, \"width\": 235, \"height\": 110}}], \"singleVisual\": {\"visualType\": \"card\", \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"labelDisplayUnits\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#C47A3A'\"}}}}}}}]}, \"projections\": {\"Values\": [{\"queryRef\": \"clients_clean.Balance of Defaulters (NT$ m)\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"c\", \"Entity\": \"clients_clean\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Balance of Defaulters (NT$ m)\"}, \"Name\": \"clients_clean.Balance of Defaulters (NT$ m)\", \"NativeReferenceName\": \"Balance of Defaulters (NT$ m)\"}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 755,
+          "y": 70,
+          "z": 0,
+          "width": 255,
+          "height": 110,
+          "config": "{\"name\": \"p1_c4\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 755, \"y\": 70, \"z\": 0, \"width\": 255, \"height\": 110}}], \"singleVisual\": {\"visualType\": \"card\", \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"labelDisplayUnits\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#C47A3A'\"}}}}}}}]}, \"projections\": {\"Values\": [{\"queryRef\": \"clients_clean.Watch-list Recall\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"c\", \"Entity\": \"clients_clean\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Watch-list Recall\"}, \"Name\": \"clients_clean.Watch-list Recall\", \"NativeReferenceName\": \"Watch-list Recall\"}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 195,
+          "z": 0,
+          "width": 490,
+          "height": 505,
+          "config": "{\"name\": \"p1_status\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 195, \"z\": 0, \"width\": 490, \"height\": 505}}], \"singleVisual\": {\"visualType\": \"clusteredColumnChart\", \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}, \"projections\": {\"Category\": [{\"queryRef\": \"clients_clean.Repayment status\"}], \"Y\": [{\"queryRef\": \"clients_clean.Default Rate\"}], \"Tooltips\": [{\"queryRef\": \"clients_clean.Clients\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"c\", \"Entity\": \"clients_clean\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Repayment status\"}, \"Name\": \"clients_clean.Repayment status\", \"NativeReferenceName\": \"Repayment status\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Default Rate\"}, \"Name\": \"clients_clean.Default Rate\", \"NativeReferenceName\": \"Default Rate\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Clients\"}, \"Name\": \"clients_clean.Clients\", \"NativeReferenceName\": \"Clients\"}], \"OrderBy\": [{\"Direction\": 1, \"Expression\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Repayment status\"}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Default rate by latest repayment status'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1D2B45'\"}}}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 520,
+          "y": 195,
+          "z": 0,
+          "width": 490,
+          "height": 505,
+          "config": "{\"name\": \"p1_months\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 520, \"y\": 195, \"z\": 0, \"width\": 490, \"height\": 505}}], \"singleVisual\": {\"visualType\": \"lineChart\", \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}, \"projections\": {\"Category\": [{\"queryRef\": \"clients_clean.Months late (last 6)\"}], \"Y\": [{\"queryRef\": \"clients_clean.Default Rate\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"c\", \"Entity\": \"clients_clean\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Months late (last 6)\"}, \"Name\": \"clients_clean.Months late (last 6)\", \"NativeReferenceName\": \"Months late (last 6)\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Default Rate\"}, \"Name\": \"clients_clean.Default Rate\", \"NativeReferenceName\": \"Default Rate\"}], \"OrderBy\": [{\"Direction\": 1, \"Expression\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Months late (last 6)\"}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Default rate by months late in the last 6'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1D2B45'\"}}}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 1040,
+          "y": 70,
+          "z": 0,
+          "width": 220,
+          "height": 195,
+          "config": "{\"name\": \"p1_s1\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1040, \"y\": 70, \"z\": 0, \"width\": 220, \"height\": 195}}], \"singleVisual\": {\"visualType\": \"slicer\", \"drillFilterOtherVisuals\": true, \"objects\": {}, \"projections\": {\"Values\": [{\"queryRef\": \"clients_clean.Credit limit (NT$)\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"c\", \"Entity\": \"clients_clean\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Credit limit (NT$)\"}, \"Name\": \"clients_clean.Credit limit (NT$)\", \"NativeReferenceName\": \"Credit limit (NT$)\"}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 1040,
+          "y": 285,
+          "z": 0,
+          "width": 220,
+          "height": 195,
+          "config": "{\"name\": \"p1_s2\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1040, \"y\": 285, \"z\": 0, \"width\": 220, \"height\": 195}}], \"singleVisual\": {\"visualType\": \"slicer\", \"drillFilterOtherVisuals\": true, \"objects\": {}, \"projections\": {\"Values\": [{\"queryRef\": \"clients_clean.Age band\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"c\", \"Entity\": \"clients_clean\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Age band\"}, \"Name\": \"clients_clean.Age band\", \"NativeReferenceName\": \"Age band\"}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 1040,
+          "y": 500,
+          "z": 0,
+          "width": 220,
+          "height": 195,
+          "config": "{\"name\": \"p1_s3\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1040, \"y\": 500, \"z\": 0, \"width\": 220, \"height\": 195}}], \"singleVisual\": {\"visualType\": \"slicer\", \"drillFilterOtherVisuals\": true, \"objects\": {}, \"projections\": {\"Values\": [{\"queryRef\": \"clients_clean.Education\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"c\", \"Entity\": \"clients_clean\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Education\"}, \"Name\": \"clients_clean.Education\", \"NativeReferenceName\": \"Education\"}]}}}",
+          "filters": "[]"
+        }
+      ]
+    },
+    {
+      "name": "page2",
+      "displayName": "Risk drivers",
+      "displayOption": 1,
+      "width": 1280,
+      "height": 720,
+      "ordinal": 1,
+      "config": "{}",
+      "filters": "[]",
+      "visualContainers": [
+        {
+          "x": 20,
+          "y": 10,
+          "z": 0,
+          "width": 1240,
+          "height": 50,
+          "config": "{\"name\": \"p2_title\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 10, \"z\": 0, \"width\": 1240, \"height\": 50}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"Repeated lateness and small limits carry most of the risk\", \"textStyle\": {\"fontSize\": \"18pt\", \"color\": \"#1D2B45\", \"fontWeight\": \"bold\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 70,
+          "z": 0,
+          "width": 1240,
+          "height": 240,
+          "config": "{\"name\": \"p2_matrix\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 70, \"z\": 0, \"width\": 1240, \"height\": 240}}], \"singleVisual\": {\"visualType\": \"pivotTable\", \"drillFilterOtherVisuals\": true, \"objects\": {\"values\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"14D\"}}}}}, {\"properties\": {\"backColor\": {\"solid\": {\"color\": {\"expr\": {\"FillRule\": {\"Input\": {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Entity\": \"clients_clean\"}}, \"Property\": \"Default Rate\"}}, \"FillRule\": {\"linearGradient2\": {\"min\": {\"color\": {\"Literal\": {\"Value\": \"'#F6EDE4'\"}}}, \"max\": {\"color\": {\"Literal\": {\"Value\": \"'#D9825B'\"}}}, \"nullColoringStrategy\": {\"strategy\": {\"Literal\": {\"Value\": \"'asZero'\"}}}}}}}}}}}, \"selector\": {\"data\": [{\"dataViewWildcard\": {\"matchingOption\": 1}}], \"metadata\": \"clients_clean.Default Rate\"}}], \"columnHeaders\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"14D\"}}}}}], \"rowHeaders\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"14D\"}}}}}], \"subTotals\": [{\"properties\": {\"fontSize\": {\"expr\": {\"Literal\": {\"Value\": \"14D\"}}}}}]}, \"projections\": {\"Rows\": [{\"queryRef\": \"clients_clean.Repayment status\"}], \"Columns\": [{\"queryRef\": \"clients_clean.Credit utilisation\"}], \"Values\": [{\"queryRef\": \"clients_clean.Default Rate\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"c\", \"Entity\": \"clients_clean\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Repayment status\"}, \"Name\": \"clients_clean.Repayment status\", \"NativeReferenceName\": \"Repayment status\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Credit utilisation\"}, \"Name\": \"clients_clean.Credit utilisation\", \"NativeReferenceName\": \"Credit utilisation\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Default Rate\"}, \"Name\": \"clients_clean.Default Rate\", \"NativeReferenceName\": \"Default Rate\"}], \"OrderBy\": [{\"Direction\": 1, \"Expression\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Repayment status\"}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Default rate: latest repayment status \\u00d7 credit utilisation'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1D2B45'\"}}}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 325,
+          "z": 0,
+          "width": 615,
+          "height": 375,
+          "config": "{\"name\": \"p2_limit\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 325, \"z\": 0, \"width\": 615, \"height\": 375}}], \"singleVisual\": {\"visualType\": \"clusteredBarChart\", \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}, \"projections\": {\"Category\": [{\"queryRef\": \"clients_clean.Credit limit (NT$)\"}], \"Y\": [{\"queryRef\": \"clients_clean.Default Rate\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"c\", \"Entity\": \"clients_clean\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Credit limit (NT$)\"}, \"Name\": \"clients_clean.Credit limit (NT$)\", \"NativeReferenceName\": \"Credit limit (NT$)\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Default Rate\"}, \"Name\": \"clients_clean.Default Rate\", \"NativeReferenceName\": \"Default Rate\"}], \"OrderBy\": [{\"Direction\": 1, \"Expression\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Credit limit (NT$)\"}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Default rate by credit limit (NT$)'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1D2B45'\"}}}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 645,
+          "y": 325,
+          "z": 0,
+          "width": 615,
+          "height": 375,
+          "config": "{\"name\": \"p2_pay\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 645, \"y\": 325, \"z\": 0, \"width\": 615, \"height\": 375}}], \"singleVisual\": {\"visualType\": \"clusteredBarChart\", \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}, \"projections\": {\"Category\": [{\"queryRef\": \"clients_clean.Share of bill paid\"}], \"Y\": [{\"queryRef\": \"clients_clean.Default Rate\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"c\", \"Entity\": \"clients_clean\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Share of bill paid\"}, \"Name\": \"clients_clean.Share of bill paid\", \"NativeReferenceName\": \"Share of bill paid\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Default Rate\"}, \"Name\": \"clients_clean.Default Rate\", \"NativeReferenceName\": \"Default Rate\"}], \"OrderBy\": [{\"Direction\": 1, \"Expression\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Share of bill paid\"}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Default rate by share of last bill paid'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1D2B45'\"}}}}}}}]}}}",
+          "filters": "[]"
+        }
+      ]
+    },
+    {
+      "name": "page3",
+      "displayName": "Early-warning watch list",
+      "displayOption": 1,
+      "width": 1280,
+      "height": 720,
+      "ordinal": 2,
+      "config": "{}",
+      "filters": "[]",
+      "visualContainers": [
+        {
+          "x": 20,
+          "y": 10,
+          "z": 0,
+          "width": 1240,
+          "height": 50,
+          "config": "{\"name\": \"p3_title\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 10, \"z\": 0, \"width\": 1240, \"height\": 50}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"A one-line rule flags 22.7% of clients and catches 51.7% of next-month defaults\", \"textStyle\": {\"fontSize\": \"18pt\", \"color\": \"#1D2B45\", \"fontWeight\": \"bold\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 70,
+          "z": 0,
+          "width": 405,
+          "height": 110,
+          "config": "{\"name\": \"p3_c1\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 70, \"z\": 0, \"width\": 405, \"height\": 110}}], \"singleVisual\": {\"visualType\": \"card\", \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"labelDisplayUnits\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#C47A3A'\"}}}}}}}]}, \"projections\": {\"Values\": [{\"queryRef\": \"clients_clean.Watch-list Share\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"c\", \"Entity\": \"clients_clean\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Watch-list Share\"}, \"Name\": \"clients_clean.Watch-list Share\", \"NativeReferenceName\": \"Watch-list Share\"}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 437,
+          "y": 70,
+          "z": 0,
+          "width": 405,
+          "height": 110,
+          "config": "{\"name\": \"p3_c2\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 437, \"y\": 70, \"z\": 0, \"width\": 405, \"height\": 110}}], \"singleVisual\": {\"visualType\": \"card\", \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"labelDisplayUnits\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#C47A3A'\"}}}}}}}]}, \"projections\": {\"Values\": [{\"queryRef\": \"clients_clean.Watch-list Precision\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"c\", \"Entity\": \"clients_clean\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Watch-list Precision\"}, \"Name\": \"clients_clean.Watch-list Precision\", \"NativeReferenceName\": \"Watch-list Precision\"}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 855,
+          "y": 70,
+          "z": 0,
+          "width": 405,
+          "height": 110,
+          "config": "{\"name\": \"p3_c3\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 855, \"y\": 70, \"z\": 0, \"width\": 405, \"height\": 110}}], \"singleVisual\": {\"visualType\": \"card\", \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"labelDisplayUnits\": {\"expr\": {\"Literal\": {\"Value\": \"1D\"}}}, \"color\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#C47A3A'\"}}}}}}}]}, \"projections\": {\"Values\": [{\"queryRef\": \"clients_clean.Watch-list Recall\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"c\", \"Entity\": \"clients_clean\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Watch-list Recall\"}, \"Name\": \"clients_clean.Watch-list Recall\", \"NativeReferenceName\": \"Watch-list Recall\"}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 20,
+          "y": 195,
+          "z": 0,
+          "width": 600,
+          "height": 505,
+          "config": "{\"name\": \"p3_rule\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 20, \"y\": 195, \"z\": 0, \"width\": 600, \"height\": 505}}], \"singleVisual\": {\"visualType\": \"clusteredColumnChart\", \"drillFilterOtherVisuals\": true, \"objects\": {\"labels\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}}}]}, \"projections\": {\"Category\": [{\"queryRef\": \"clients_clean.Watch list\"}], \"Y\": [{\"queryRef\": \"clients_clean.Default Rate\"}], \"Tooltips\": [{\"queryRef\": \"clients_clean.Clients\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"c\", \"Entity\": \"clients_clean\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Watch list\"}, \"Name\": \"clients_clean.Watch list\", \"NativeReferenceName\": \"Watch list\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Default Rate\"}, \"Name\": \"clients_clean.Default Rate\", \"NativeReferenceName\": \"Default Rate\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Clients\"}, \"Name\": \"clients_clean.Clients\", \"NativeReferenceName\": \"Clients\"}], \"OrderBy\": [{\"Direction\": 1, \"Expression\": {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"c\"}}, \"Property\": \"Watch list\"}}}]}, \"vcObjects\": {\"title\": [{\"properties\": {\"show\": {\"expr\": {\"Literal\": {\"Value\": \"true\"}}}, \"text\": {\"expr\": {\"Literal\": {\"Value\": \"'Default rate: flagged vs not flagged'\"}}}, \"fontColor\": {\"solid\": {\"color\": {\"expr\": {\"Literal\": {\"Value\": \"'#1D2B45'\"}}}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 640,
+          "y": 195,
+          "z": 0,
+          "width": 620,
+          "height": 505,
+          "config": "{\"name\": \"p3_text\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 640, \"y\": 195, \"z\": 0, \"width\": 620, \"height\": 505}}], \"singleVisual\": {\"visualType\": \"textbox\", \"drillFilterOtherVisuals\": true, \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"The rule\", \"textStyle\": {\"fontSize\": \"14pt\", \"color\": \"#1D2B45\", \"fontWeight\": \"bold\"}}]}, {\"textRuns\": [{\"value\": \"Flag any account that is one or more months late this month.\", \"textStyle\": {\"fontSize\": \"12pt\", \"color\": \"#1D2733\"}}]}, {\"textRuns\": [{\"value\": \"\", \"textStyle\": {\"fontSize\": \"12pt\", \"color\": \"#1D2733\"}}]}, {\"textRuns\": [{\"value\": \"Recommendations\", \"textStyle\": {\"fontSize\": \"14pt\", \"color\": \"#1D2B45\", \"fontWeight\": \"bold\"}}]}, {\"textRuns\": [{\"value\": \"1. Start collections on the watch list right away: reminders and payment plans before accounts roll into a second month.\", \"textStyle\": {\"fontSize\": \"12pt\", \"color\": \"#1D2733\"}}]}, {\"textRuns\": [{\"value\": \"2. Use the months-late count in limit reviews: freeze limit increases for clients with 3 or more late months in the last 6.\", \"textStyle\": {\"fontSize\": \"12pt\", \"color\": \"#1D2733\"}}]}, {\"textRuns\": [{\"value\": \"3. Encourage paying in full: offer auto-pay of the full balance and alerts at high utilisation.\", \"textStyle\": {\"fontSize\": \"12pt\", \"color\": \"#1D2733\"}}]}, {\"textRuns\": [{\"value\": \"\", \"textStyle\": {\"fontSize\": \"12pt\", \"color\": \"#1D2733\"}}]}, {\"textRuns\": [{\"value\": \"Data: UCI Default of Credit Card Clients (Taiwan, Apr\\u2013Sep 2005), 30,000 clients. Descriptive rates, not a predictive model.\", \"textStyle\": {\"fontSize\": \"10pt\", \"color\": \"#1D2733\"}}]}]}}]}}}",
+          "filters": "[]"
+        }
+      ]
+    }
+  ],
+  "filters": "[]"
+}

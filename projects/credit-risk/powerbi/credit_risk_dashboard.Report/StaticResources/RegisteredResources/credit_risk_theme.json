@@ -1,0 +1,13 @@
+{
+  "name": "Duc portfolio - navy and copper",
+  "dataColors": ["#C47A3A", "#1D2B45", "#7D8CA1", "#E3B07D", "#4F5D71", "#A9652D"],
+  "background": "#FFFFFF",
+  "foreground": "#1D2733",
+  "tableAccent": "#C47A3A",
+  "good": "#4F7A5A",
+  "neutral": "#E3B07D",
+  "bad": "#A9452D",
+  "minimum": "#F6EDE4",
+  "center": "#E3B07D",
+  "maximum": "#A9452D"
+}

@@ -1,0 +1,2 @@
+flagged_clients,share_flagged,precision,recall,default_rate_not_flagged
+6818,0.2273,0.5029,0.5167,0.1383

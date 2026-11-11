@@ -1,0 +1,17 @@
+status_band,utilisation_band,clients,default_rate
+1 Paid in full / no use,1 <30%,7967,0.1549
+1 Paid in full / no use,2 30-70%,274,0.1387
+1 Paid in full / no use,3 70-100%,159,0.239
+1 Paid in full / no use,4 100%+,45,0.2
+2 Revolving (minimum paid),1 <30%,3885,0.0955
+2 Revolving (minimum paid),2 30-70%,4090,0.1147
+2 Revolving (minimum paid),3 70-100%,5411,0.1477
+2 Revolving (minimum paid),4 100%+,1351,0.1843
+3 1 month late,1 <30%,2233,0.2785
+3 1 month late,2 30-70%,523,0.4818
+3 1 month late,3 70-100%,650,0.4308
+3 1 month late,4 100%+,282,0.3475
+4 2+ months late,1 <30%,707,0.6803
+4 2+ months late,2 30-70%,799,0.7584
+4 2+ months late,3 70-100%,1179,0.6853
+4 2+ months late,4 100%+,445,0.6337
